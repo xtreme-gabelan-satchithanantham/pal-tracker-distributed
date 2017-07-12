@@ -6,5 +6,7 @@ applications:
   instances: 1
   env:
     REGISTRATION_SERVER_ENDPOINT: http://registration-pal-gs.apps.quandary.pal.pivotal.io
+    TRUST_CERTS: api.sys.chicken.pal.pivotal.io
   services:
-  - tracker-allocations-database
+  - [database-binding]
+  - tracker-service-registry
