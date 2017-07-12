@@ -7,5 +7,5 @@ applications:
   env:
     TRUST_CERTS: api.sys.chicken.pal.pivotal.io
   services:
-    - [database-binding]
+    - tracker-allocations-database
     - tracker-service-registry
