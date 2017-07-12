@@ -5,7 +5,7 @@ applications:
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-gs.apps.quandary.pal.pivotal.io
+    TRUST_CERTS: api.sys.quandary.pal.pivotal.io
   services:
     - tracker-allocations-database
     - tracker-service-registry
