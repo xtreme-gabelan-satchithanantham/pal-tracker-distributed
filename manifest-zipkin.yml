@@ -8,3 +8,4 @@ applications:
     TRUST_CERTS: api.sys.quandary.pal.pivotal.io, uaa.p-identity.sys.quandary.pal.pivotal.io
   services:
   - tracker-amqp
+  - tracker-service-registry
