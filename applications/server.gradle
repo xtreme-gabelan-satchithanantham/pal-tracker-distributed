@@ -18,6 +18,7 @@ dependencies {
     compile "ch.qos.logback:logback-classic:1.1.11"
     compile "org.springframework.boot:spring-boot-starter-actuator"
     compile "io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry"
+    compile "io.pivotal.spring.cloud:spring-cloud-services-starter-config-client"
     compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker"
     compile "org.springframework.cloud:spring-cloud-starter-oauth2"
     compile "io.pivotal.spring.cloud:spring-cloud-sso-connector:$springCloudSsoVersion"
@@ -30,8 +31,9 @@ dependencies {
 
 bootRun.environment([
         "APPLICATION_OAUTH_ENABLED": true,
-        "SECURITY_OAUTH2_CLIENT_CLIENT_ID": "1d1e1229-904e-4fee-aaf6-a554a8eae3cf",
-        "SECURITY_OAUTH2_CLIENT_CLIENT_SECRET": "c5c7f012-e75b-4cef-b0c3-f0b393f3e5da",
+        "REGISTRATION_SERVER_ENDPOINT": "http://registration-server",
+        "SECURITY_OAUTH2_CLIENT_CLIENT_ID": "e06e7b24-d406-48c4-ae76-7d4b7e0be9f3",
+        "SECURITY_OAUTH2_CLIENT_CLIENT_SECRET": "7323ef0e-c602-4e76-8940-3ea0983d1331",
         "SECURITY_USER_NAME": "actuator",
         "SECURITY_USER_PASSWORD": "operations4red"
 ])
